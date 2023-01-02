@@ -21,11 +21,20 @@
 }
 
 /*Ben's CSS*/
-a.email-link {
-	@extend .icon;
-	@extend .solid;
-	@extend .fa-envelope;
-  }
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  src: url("fontawesome-webfont.woff2") format("woff2"),
+       url("fontawesome-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.email-link::before {
+  content: "\f0e0"; /* Unicode character for the envelope icon */
+  font-family: "Font Awesome 5 Free";
+}
+
 #broken{
 	padding: 2em 2em 2em 0;
 }
