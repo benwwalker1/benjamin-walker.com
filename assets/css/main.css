@@ -21,7 +21,11 @@
 }
 
 /*Ben's CSS*/
-
+a.email-link {
+	@extend .icon;
+	@extend .solid;
+	@extend .fa-envelope;
+  }
 #broken{
 	padding: 2em 2em 2em 0;
 }
